@@ -1,2 +1,1 @@
-# nestjsStartUpApp
-nestjs with swagger and jwt startup file
+// for create crud command (nest g res user)
