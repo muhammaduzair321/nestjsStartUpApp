@@ -54,7 +54,4 @@ async function bootstrap() {
 bootstrap();
 
 
-// 1.Add Doc for model properties 
-// 2.Add tags
-// 3.Add Responses
-// 4.Add Bearer Auth
+
