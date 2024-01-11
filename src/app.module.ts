@@ -7,6 +7,7 @@ import { UserModule } from './user/user.module';
 import mongoose from 'mongoose';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { SubscriptionPlanModule } from './subscription-plan/subscription-plan.module';
 
 @Module({
   imports: [
@@ -23,6 +24,8 @@ import { join } from 'path';
     }),
 
     UserModule,
+
+    SubscriptionPlanModule,
   ],
   controllers: [AppController],
   providers: [AppService],
