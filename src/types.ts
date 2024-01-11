@@ -9,4 +9,5 @@ export interface LoginRsp {
     token : string ;
     email:string;
     id:string;
+    userType:string;
 }
