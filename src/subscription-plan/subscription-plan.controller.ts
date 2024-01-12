@@ -11,14 +11,14 @@ export class SubscriptionPlanController {
 
   @Post()
   create(@Body() createSubscriptionPlanDto: CreateSubscriptionPlanDto) {
-    return this.subscriptionPlanService.create(createSubscriptionPlanDto);
+  return this.subscriptionPlanService.create(createSubscriptionPlanDto);
   }
 
   @Get()
-  findAll() {
+  async findAll() {
     return this.subscriptionPlanService.findAll();
   }
-
+  
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.subscriptionPlanService.findOne(+id);

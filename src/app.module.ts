@@ -22,9 +22,7 @@ import { SubscriptionPlanModule } from './subscription-plan/subscription-plan.mo
         uri: process.env.MONGO_URL,
       }),
     }),
-
     UserModule,
-
     SubscriptionPlanModule,
   ],
   controllers: [AppController],

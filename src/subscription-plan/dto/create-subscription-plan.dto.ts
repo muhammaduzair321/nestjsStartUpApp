@@ -10,4 +10,16 @@ export class CreateSubscriptionPlanDto {
     @IsNumber()
     @IsNotEmpty()
     subscriptionPrice: number;
+    @ApiProperty({description:"Price of the one Region"})
+    @IsNumber()
+    @IsNotEmpty()
+    oneRegionPrice: number;
+    @ApiProperty({description:"Price of the two Region"})
+    @IsNumber()
+    @IsNotEmpty()
+    twoRegionPrice: number;
+    @ApiProperty({description:"Price of the All Region"})
+    @IsNumber()
+    @IsNotEmpty()
+    allRegionPrice: number;
 }

@@ -5,9 +5,16 @@ export class SignUpRsp{
     email: string;
     
 }
+export class SubscriptionRsp{
+    @ApiProperty({type: String})
+    message: string;
+    
+}
 export interface LoginRsp {
     token : string ;
     email:string;
     id:string;
     userType:string;
 }
+
+
